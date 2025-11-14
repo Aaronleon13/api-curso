@@ -22,3 +22,5 @@ INSERT INTO users (name, email, password) VALUES
 CREATE INDEX idx_email ON users(email);
 
 SELECT name, email FROM users WHERE is_visible = TRUE;
+
+DELETE FROM users WHERE id_user = 2;
