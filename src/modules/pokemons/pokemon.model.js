@@ -11,7 +11,7 @@ import pool from "../../config/db.js";
 
 
 const getPokemons = async (id) => {
-    const [rows] = await pool.query("SELECT *FROM pokemons WHERE id_user = ?", [id]);
+    const [rows] = await pool.query("SELECT * FROM pokemons WHERE id_user = ?", [id]);
     return rows;
 };
 
