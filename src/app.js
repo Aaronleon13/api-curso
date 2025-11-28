@@ -28,7 +28,7 @@ const generalLimiter = rateLimit({
 
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutos
-  max: 5, // Solo 5 intentos de login
+  max: 15, // Solo 5 intentos de login
   message: "Demasiados intentos de inicio de sesión, intenta en 15 minutos",
   skipSuccessfulRequests: true, // No cuenta requests exitosos
 });
